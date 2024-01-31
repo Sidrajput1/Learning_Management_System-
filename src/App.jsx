@@ -5,7 +5,7 @@ function App() {
  
 
   return (
-    <div className='text-3xl bg-pink-300'>
+    <div>
     lms
       
     </div>
