@@ -1,8 +1,10 @@
-# React + Vite
+#project learning management system
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### setup-project
 
-Currently, two official plugins are available:
+1.using create react vite app
+2.using taiwind css
+3.I hope you know the process of installing the tailwind css for react-vite framwork 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
