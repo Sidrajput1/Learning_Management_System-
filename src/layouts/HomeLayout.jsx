@@ -4,6 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import { Link, useNavigate} from "react-router-dom";
 
 import Footer from '../components/Footer'
+import { logout } from "../redux/slice/authSlice";
 
 function HomeLayout({children}) {
 
@@ -33,12 +34,14 @@ function HomeLayout({children}) {
     const handleLogout = async(e) =>{
         e.preventDefault()
 
-        //const res = await dispatch(logout());
+        const res = await dispatch(logout());
 
-        // if(res?.payload?.success){
-        //     navigate("/");
-        // }
-        navigate("/");
+        if(res?.payload?.success){
+            navigate("/");
+        }else{
+            console.error("Registration failed:", res.payload);
+        }
+        //navigate("/");
     }
 
     return (
