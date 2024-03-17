@@ -74,7 +74,11 @@ function HomeLayout({children}) {
                         {isLoggedIn && role==='ADMIN' &&(
                             <li>
                                 <Link to={"/admin/dasboard"}>Admin Dashboard</Link>
+                                <Link to={"/course/create"}>Create Course</Link>
                             </li>
+                            // <li>
+                            //     <Link to={"/course/create"}>Create Course</Link>
+                            // </li>
                         )}
                         <li>
                             <Link to="/courses">All Coursed</Link>
@@ -87,7 +91,7 @@ function HomeLayout({children}) {
                         </li>
                         {!isLoggedIn&& (
                             <li className="absolute top-44  w-[90%] ">
-                                <div className="w-full flex items-center justify-center">
+                                <div className="w-full flex items-center justify-center mt-[30rem]">
                                     <button className="btn-primary px-4 py-1 font-extrabold rounded-md w-full bg-pink-700  ">
                                         <Link to={'/login'}>Login</Link>
                                     </button>
@@ -100,7 +104,7 @@ function HomeLayout({children}) {
 
                         {isLoggedIn && (
                             <li className="absolute top-44  w-[90%] ">
-                            <div className="w-full flex items-center justify-center">
+                            <div className="w-full flex items-center justify-center mt-[30rem]">
                                 <button className="btn-primary px-4 py-1 font-extrabold rounded-md w-full bg-pink-700  ">
                                     <Link to={'/user/profile'}>Profile</Link>
                                 </button>

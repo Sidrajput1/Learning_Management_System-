@@ -14,6 +14,7 @@ function DisplayLecture() {
     const courseDetails = useLocation().state;
     const { lectures } = useSelector((state) => state.lecture);
     const { role } = useSelector((state) => state.auth);
+    console.log("role is:",role);
 
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 

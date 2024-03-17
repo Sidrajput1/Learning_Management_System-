@@ -63,7 +63,7 @@ function CreateCourse() {
         let res = undefined;
 
         if (initialCourseData.newCourse) {
-            console.log(userInput);
+            //console.log(initialCourseData);
 
             if (!userInput.title || !userInput.category || !userInput.description || !userInput.createdBy || !userInput.thumbnail) {
                 toast.error('All input feilds are mandatory')
